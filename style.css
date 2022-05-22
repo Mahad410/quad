@@ -20,6 +20,7 @@ main {
 .main-intro {
     grid-column: 2;
     grid-row: 1;
+    text-align: center;
 }
 
 .main-intro h1 {
@@ -110,7 +111,6 @@ main {
     }
     .main-intro h1 {
         font-size: 1.4rem;
-        text-align: center;
     }
     .main-intro p {
         font-size: 0.9rem;
