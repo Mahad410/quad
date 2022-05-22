@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+
+main {
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    box-sizing: border-box;
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    font-family: 'Poppins', sans-serif;
+}
+
+.main-intro {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.main-intro h1 {
+    font-weight: 400;
+    color: #a3a5ae;
+}
+
+.main-intro span {
+    font-weight: 600;
+    color: #4c4e61;
+}
+
+.main-intro p {
+    font-weight: 400;
+    padding: 20px 0 0;
+    font-size: 0.8rem;
+    color: #a3a5ae;
+    text-align: center;
+}
+
+.label-content-1 {
+    grid-row: 2/4;
+    border-top: 5px solid #45d3d3;
+}
+
+.label-content-2 {
+    grid-row: 2;
+    grid-column: 2/2;
+    border-top: 5px solid #ea5353;
+}
+
+.label-content-3 {
+    grid-row: 3;
+    grid-column: 2/2;
+    border-top: 5px solid #fcaf4a;
+}
+
+.label-content-4 {
+    grid-row: 2/4;
+    border-top: 5px solid #549ef2
+}
+
+[class*="label-content-"] {
+    box-sizing: border-box;
+    width: 300px;
+    min-height: 180px;
+    padding: 0 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 8px 8px 5px 0px rgba(0, 0, 0, 0.35);
+    -webkit-box-shadow: 8px 8px 5px 0px rgba(0, 0, 0, 0.35);
+    -moz-box-shadow: 8px 8px 5px 0px rgba(0, 0, 0, 0.35);
+}
+
+[class*="label-content-"] img {
+    float: right;
+    width: 50px;
+    height: 50px;
+    align-self: flex-end;
+}
+
+[class*="label-content-"] h1 {
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #4c4e61;
+}
+
+[class*="label-content-"] p {
+    font-weight: 400;
+    font-size: 0.7rem;
+    color: #a3a5ae;
+}
+
+@media screen and (max-width:1100px) {
+    main {
+        overflow: visible;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        margin: 20px 0 30px auto;
+    }
+    .main-intro {
+        grid-row: 1;
+        grid-column: auto;
+        width: 300px;
+    }
+    .main-intro h1 {
+        font-size: 1.4rem;
+        text-align: center;
+    }
+    .main-intro p {
+        font-size: 0.9rem;
+    }
+    .label-content-1 {
+        grid-row: 2;
+        grid-column: auto;
+    }
+    .label-content-2 {
+        grid-row: 3;
+        grid-column: auto;
+    }
+    .label-content-3 {
+        grid-row: 4;
+        grid-column: auto;
+    }
+    .label-content-4 {
+        grid-row: 5;
+        grid-column: auto;
+    }
+    [class*="label-content-"] {
+        margin: 20px 0;
+    }
+}
